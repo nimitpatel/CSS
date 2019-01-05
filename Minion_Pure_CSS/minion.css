@@ -1,0 +1,104 @@
+* {
+	margin: 0;
+	background: #afeeee;
+}
+
+.container {
+	height: 500px;
+	width: 500px;
+	background: none;
+	position: relative;
+	margin: auto;
+	display: block;
+	margin-top: 3%;
+}
+
+.minion {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.face {
+	position: relative;
+	height: 45%;
+	width: 60%;
+	left: 20%;
+	background: #000;
+	border-top-left-radius: 10%;
+	border-top-right-radius: 10%;
+	border-bottom: 2px solid #ccc;
+	z-index: 2;
+}
+
+.eye {
+	position: relative;
+	height: 33.5%;
+	width: 25%;
+	left: 37.5%;
+	top: 82%;
+	background: #000;
+	border: 1px solid #ccc;
+	border-radius: 50%; 
+}
+
+.inner-eye {
+	position: relative;
+	height: 75%;
+	width: 75%;
+	top: 12.5%;
+	left: 12.5%;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.pupil {
+	position: relative;
+	height: 40%;
+	width: 40%;
+	top: 30%;
+	left: 50%;
+	border-radius: 50%;
+	background: #000;
+	animation: eye_animation 6s ease-in-out infinite;
+}
+
+.body {
+	position: absolute;
+	height: 55%;
+	width: 60%;
+	left: 20%;
+	background: #ffff00;
+	border-bottom-left-radius: 10%;
+	border-bottom-right-radius: 10%;
+	z-index: 1;
+}
+
+.mouth {
+	position: relative;
+	width: 20%;
+	height: 10%;
+	left: 40%;
+	top: 20%;
+	background: #ffff00;
+	border-radius: 100%;
+	border-bottom: 6px solid #000;
+}
+
+@keyframes eye_animation {
+	0% {
+		left: 50%;
+	}
+	25% {
+		left: 30%;
+	}
+	50% {
+		left: 10%;
+	}
+	75% {
+		left: 30%;
+	}
+	100% {
+		left: 50%;
+	}
+}
