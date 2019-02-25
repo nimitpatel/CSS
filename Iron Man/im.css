@@ -1,0 +1,213 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	position: absolute;
+	height: 500px;
+	width: 500px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.iron-man {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.head {
+	position: relative;
+	height: 150px;
+	width: 300px;
+	top: 5%;
+	left: 20%;
+	border-radius: 300px 300px 0 0;
+	background: #da1f28;
+}
+
+.head::before {
+	content: "";
+	position: absolute;
+	height: 375px;
+	width: 250px;
+	top: 10%;
+	left: 8%;
+   border-radius: 250px 250px 50px 50px;
+	background: #D7BB2B;
+}
+
+.head::after {
+	content: "";
+	position: absolute;
+	border-top: 100px solid #da1f28;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+   border-radius: 0 0 40px 40px;
+	height: 0;
+	width: 50px;
+	left: 32%;
+	top: 10%;
+}
+
+.left-ear {
+	position: absolute;
+	border-top: 25px solid transparent;
+	border-bottom: 25px solid transparent;
+	border-right: 39px solid #da1f28;
+	height: 75px;
+	width: 0px;
+	top: 85%;
+	left: -3%;
+	z-index: -1;
+}
+
+.left-cut1 {
+	position: absolute;
+	border-bottom: 25px solid transparent;
+	border-left: 25px solid #da1f28;
+	height: 100px;
+	width: 0px;
+	left: 5%;
+	top: 70%;
+}
+
+.right-ear {
+	position: absolute;
+	border-top: 25px solid transparent;
+	border-bottom: 25px solid transparent;
+	border-left: 39px solid #da1f28;
+	height: 75px;
+	width: 0px;
+	top: 85%;
+	left: 90%;
+	z-index: -1;
+}
+
+.right-cut1 {
+	position: absolute;
+	border-bottom: 25px solid transparent;
+	border-right: 25px solid #da1f28;
+	height: 100px;
+	width: 0px;
+	left: 85%;
+	top: 70%;
+}
+
+.left-cut2 {
+	position: absolute;
+	width: 150px;
+	height: 200px;
+	background-color: #da1f28;
+	clip-path: polygon(0 0, 33% 60%, 37% 80%, 25% 96%, 7% 83%, 0 50%);
+	top: 110%;
+}
+
+.right-cut2 {
+	position: absolute;
+	width: 150px;
+	height: 200px;
+	background-color: #da1f28;
+	clip-path: polygon(0 0, 33% 60%, 37% 80%, 25% 96%, 7% 83%, 0 50%);
+	transform: rotatey(180deg);
+	top: 110%;
+	left: 50%;
+}
+
+.left-cut3 {
+	position: absolute;
+	width: 40px;
+	height: 64px;
+	background-color: #da1f28;
+	clip-path: polygon(0 0, 65% 35%, 100% 95%, 75% 100%, 35% 65%);
+	top: 220%;
+	left: 3.5%;
+}
+
+.right-cut3 {
+	position: absolute;
+	width: 40px;
+	height: 64px;
+	background-color: #da1f28;
+	clip-path: polygon(0 0, 65% 35%, 100% 95%, 75% 100%, 35% 65%);
+	transform: rotatey(180deg);
+	top: 220%;
+	left: 83.5%;
+}
+
+.eye-left {
+	background: #00579b;
+	width: 80px;
+	height: 40px;
+	top: 110%;
+	left: 45%;
+	position: absolute;
+	transform: translate(-110%, -40%);
+	clip-path: polygon(10% 0, 95% 40%, 100% 90%, 50% 100%, 0 40%);
+  animation: eye 5s infinite ease-in-out;
+}
+
+.eye-right {
+	background: #00579b;
+	width: 80px;
+	height: 40px;
+	top: 110%;
+	left: 53%;
+	position: absolute;
+	transform: translate(10%, -40%)rotateY(180deg);
+	clip-path: polygon(10% 0, 95% 40%, 100% 90%, 50% 100%, 0 40%);
+  animation: eye 5s infinite ease-in-out;
+}
+
+.left-cut4 {
+	position: absolute;
+	width: 25px;
+	height: 50px;
+	background-color: #000;
+	clip-path: polygon(15% 10%, 65% 40%, 100% 15%, 100% 40%, 65% 70%, 0% 25%);
+	top: 213%;
+	left: 17%;
+}
+
+.right-cut4 {
+	position: absolute;
+	width: 25px;
+	height: 50px;
+	background-color: #000;
+	clip-path: polygon(15% 10%, 65% 40%, 100% 15%, 100% 40%, 65% 70%, 0% 25%);
+	transform: rotatey(180deg);
+	top: 213%;
+	left: 75%;
+}
+
+.mid1 {
+	position: absolute;
+	width: 150px;
+	height: 10px;
+	background-color: #000;
+	top: 218.5%;
+	left: 25%;
+}
+
+.mouth {
+	position: absolute;
+	width: 220px;
+	height: 60px;
+	background-color: #da1f28;
+	clip-path: polygon(19% 0, 80% 0, 100% 40%, 80% 80%, 49% 100%, 18% 80%, 0 40%);
+	top: 79%;
+	left: 28%;
+}
+
+@keyframes eye {
+	from {
+    box-shadow: inset 0 0 75px #20f5ff;
+	}
+	to {
+    box-shadow: inset 0 0 0 #20f5ff;
+	}
+}
