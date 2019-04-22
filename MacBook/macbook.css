@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--white);
+  }
+  
+  :root {
+    --white: white;
+    --black: #151515;
+    --grey: #c4c4c4;
+    --screen: #dbdbdb;
+    --border: #bbbbbb;
+    --opener: #aaaaaa;
+  }
+  
+  .body {
+    width: 225px;
+    height: 125px;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+  }
+  
+  .screen {
+    width: 208px;
+    height: 104px;
+    border: 8px solid var(--border);
+    border-bottom: 12px solid var(--border);
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    /* Photo by 贝莉儿 NG on Unsplash */
+    background-image:
+      url(https://images.unsplash.com/photo-1453955994444-36bcd2f979fb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=487ee01216dc0ecd3cf5ca8b6a205ef5&auto=format&fit=crop&w=1500&q=80);
+    background-size: 208px 104px;
+  }
+  
+  .screen span {
+    font-size: 7px;
+    color: var(--black);
+    position: absolute;
+    top: 106%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+  }
+  
+  .keyboard {
+    width: 275px;
+    border: 3px solid var(--border);
+    position: absolute;
+    top: 102%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-bottom-left-radius: 200px 20px;
+    border-bottom-right-radius: 200px 20px;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .opener {
+    width: 40px;
+    border: 2px solid var(--opener);
+    border-radius: 75px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+  } 
+  
+  .camera {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: var(--black);
+    position: absolute;
+    top: -4%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+  }
